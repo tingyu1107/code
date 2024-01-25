@@ -17,13 +17,13 @@ duration = 5  # 五秒
 y = librosa.util.fix_length(y, int(sr * duration))
 
 # 繪製音訊波形
-# plt.figure(figsize=(10, 4))
-# plt.plot(y, color='blue')
-# plt.title('Audio Waveform')
-# plt.xlabel('Sample')
-# plt.ylabel('Amplitude')
-# plt.ylim(-1, 1)  # Set y-axis limits
-# plt.show()
+plt.figure(figsize=(10, 4))
+plt.plot(y, color='blue')
+plt.title('Audio Waveform')
+plt.xlabel('Sample')
+plt.ylabel('Amplitude')
+plt.ylim(-1, 1)  # Set y-axis limits
+plt.show()
 
 # 正規化音訊到範圍 [-1, 1]
 y_normalized = librosa.util.normalize(y)
